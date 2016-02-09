@@ -1,0 +1,102 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.jst_page {
+  display: absolute; 
+  width: 1232px;
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2),
+(-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+body {
+  transform: scale(0.7);
+  transform-origin: 0% 0%;
+}
+}
+
+.jst_row {
+  display: flex;
+}
+.jst_frame {
+  margin: 12px;
+  border: 4px solid black;
+  height: 550px;
+  position: relative;
+}
+.jst_note {
+  margin-left: 15px;
+  font-size: 13px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: bold;
+  height: 10px;
+}
+
+.jst_right_anchor_bubble, .jst_left_anchor_bubble {
+  position: absolute;
+  border: 1px;
+  z-index: 3;
+}
+
+.jst_image {
+  position: absolute;
+  z-index: -1;
+}
+
+.jst_bubble_box {
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: 100%;
+  height: 20%;
+  border: 3px solid black;
+  margin: 1px;
+  background-color: white;
+}
+
+.jst_text_box {
+position: absolute;
+width: auto;
+margin: 10px;
+font-family: 'Nanum Gothic', sans-serif;
+font-size: 22px;
+text-align: justify;
+line-height: 150%;
+}
+.jst_title {
+margin: auto;
+margin-top: 10%;
+font-family: 'Nanum Gothic', sans-serif;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+}
+.jst_author {
+margin: auto;
+margin-top: 95%;
+margin-left: 50%;
+font-family: 'Nanum Gothic', sans-serif;
+font-size: 25px;
+font-weight: bold;
+}
+
+.jst_text {
+position: absolute;
+/*border: 1px solid #ccc; */
+top: 0px;
+left: 0px;
+width: inherit;
+padding: 10px;
+padding-bottom: 15px;
+font-family: 'Nanum Pen Script', cursive;
+font-size: 30px;
+text-align: center;
+}
+
+.jst_canvas_bubble {
+  width: inherit;
+  height: inherit;
+  top: 0px;
+  left: 0px;
+}
