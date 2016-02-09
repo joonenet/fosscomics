@@ -6,6 +6,11 @@
   width: 1232px;
 }
 
+body {
+  transform: scale(0.7);
+  transform-origin: 0% 0%;
+}
+
 @media 
 (-webkit-min-device-pixel-ratio: 2),
 (-min-device-pixel-ratio: 2),

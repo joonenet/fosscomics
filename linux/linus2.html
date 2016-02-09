@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8"> 
+<head>
+<link rel="stylesheet" type="text/css" href="../jstoons/jstoons.css"
+</head>
+<body>
+  <div class="jst_page">
+    <!-- first low -->
+    <div class="jst_row">
+	  <!-- first frame -->
+      <div class="jst_frame" id="comics_front" style="width: 33.3%">
+        <img class="jst_image" src="linus2_1_1_s.png" style="left:0%; top:22%;">
+        <div class="jst_bubble_box" style="height: 16%">
+          <div class="jst_text_box">한달 후에 미닉스 설치 디스켓이 도착했다.</div>
+        </div>
+        <div class="jst_left_anchor_bubble" id="id_bubble_1" style="top:15%; left:50%; width:150px">
+          <canvas class="jst_canvas_bubble"></canvas>
+          <div class="jst_text">드디어 미닉스를 설치하는구나</div>
+        </div>
+      </div>
+      
+	  <!-- second frame -->
+      <div class="jst_frame" id="jst_frame_2" style="width: 33.3%; z-order:">
+        <div class="jst_bubble_box" style="height: 16%">
+          <div class="jst_text_box">하지만, 미닉스의 여러 부분에 실망을 느꼈다.</div>
+        </div>
+        <img class="jst_image" src="linus2_1_2_s.png" style="left:0%; top:15%; ">
+
+        <div class="jst_right_anchor_bubble" id="id_bubble_1" style="top:35%; left:0%; width:250px">
+          <canvas class="jst_canvas_bubble"></canvas>
+          <div class="jst_text">학교 유닉스 시스템에<br> 접속해야 하는데, 터미널<br>에뮬레이션 기능이<br>시원치 않군</div>
+        </div>
+      </div>
+      <!-- third frame -->
+      <div class="jst_frame" id="jst_frame_2" style="width: 33.3%">
+        <div class="jst_bubble_box" style="height: 21%">
+          <div class="jst_text_box">핀란드의 긴 겨울 동안 386 하드웨어도 배울 겸해서 터미널 에뮬레이터를 개발을 시작했다.</div>
+        </div>
+        <img class="jst_image" src="linus2_1_3_s.png" style="left:-5%; top:20%; ">
+            
+        <div class="jst_right_anchor_bubble" id="id_bubble_1" style="top:25%; left:3%; width: 200px">
+          <canvas class="jst_canvas_bubble"></canvas>
+          <div class="jst_text" id="id_text_3">음..386 PC에<br>동작하는 터미널 에뮬레이터를 만들어 볼까?</div>
+        </div>
+      </div>
+    </div>
+    <div class="jst_note"></div>
+
+    <!-- second low -->
+    <div class="jst_row">
+  	  <!-- first frame -->
+      <div class="jst_frame" id="comics_front" style="width: 33%">
+        <img class="jst_image" src="linus2_2_1_s.png" style="top: 50%; width:100%">
+        <div class="jst_bubble_box" style="height:38%">
+          <div class="jst_text_box">운영체제 없이 바로 실행되는 터미널이라서 BIOS등 하드웨어를 잘 알아야했다. 에뮬레이터에 여러 기능을 추가할 수록 운영체제의 모습을 갖추기 시작했다. 91년 9월 17일에 0.01 버전을 ftp 사이트에 공개했다.
+		      </div>
+        </div>
+      </div>
+      <!-- second frame -->
+      <div class="jst_frame" style="width: 33%">
+        <div class="jst_bubble_box" style="height: 9%">
+            <div class="jst_text_box">그해 12월 <a href="https://www.cs.cmu.edu/~awb/linux.history.html" target="_blank">0.11버전</a>을 공개했다.</div>
+        </div>
+        <div class="jst_bubble_box" style="top: 10%; left: 0px; width:99%; border: 0px">
+          <div class="jst_text_box" style="transform: scale(0.4,0.4) translate(-200px, 0px); transform-origin: 0% 0%;">
+              <pre>
+                From: torvalds@klaava.Helsinki.FI (Linus Benedict Torvalds)
+                Newsgroups: comp.os.minix
+                Subject: Re: Status of LINUX?
+                Summary: Still in beta
+                Message-ID:
+                Date: 19 Dec 91 23:35:45 GMT
+                Organization: University of Helsinki
+
+                Linux is still in beta (although available for brave souls by ftp),
+                and has reached the version 0.11.  It's still not as comprehensive
+                as 386-minix, but better in some respects.  The "Linux info-sheet"
+                should be posted here some day by the person that keeps that up to
+                date.  In the meantime, I'll give some small pointers.
+
+                First the bad news:
+
+                - Still no SCSI: people are working on that, but no date yet.
+                Thus you need a AT-interface disk (I have one report that it
+                works on an EISA 486 with a SCSI disk that emulates the
+                AT-interface, but that's more of a fluke than anything else:
+                ISA+AT-disk is currently the hardware setup)
+
+                As you can see, 0.11 had already a small following. It wasn't much,
+                but it did work.
+
+                - still no init/login: you get into bash as root upon bootup.
+
+                That was still standard in the next release.
+
+                - although I have a somewhat working VM (paging to disk), it's not
+                ready yet.  Thus linux needs at least 4M to be able to run the
+                GNU binaries (especially gcc).  It boots up in 2M, but you
+                cannot compile.
+                 ...
+            </pre>
+          </div>
+        </div>
+      </div>
+      
+      <!-- third frame -->
+      <div class="jst_frame" style="width: 33%">
+        <div class="jst_bubble_box" style="height: 26%">
+		      <div class="jst_text_box">라이선센스도 간단해서  리눅스를 다른 사람에게 판매하지 않고, 코드를 향상 시키면 모든 사람이 볼 수 있도록 코드를 공개하는 조건으로 했다.</div>
+        </div>
+        <!--  57% of original size -->
+        <img class="jst_image" src="linus2_2_3_s.png" style="top: 25%; left:0%; width:100%">
+        <div class="jst_right_anchor_bubble" id="id_bubble_2" style="top: 26%; left: -5%; width:200px">
+          <canvas class="jst_canvas_bubble"></canvas>
+          <div class="jst_text" id="id_text_4">돈 대신 엽서를 받기로 했지만.. 와우!</div>
+        </div>
+	    </div>
+	  </div>
+    <div class="jst_note"></div>
+
+    <!-- third low -->
+    <div class="jst_row">
+      <!-- first frame -->
+      <div class="jst_frame" id="comics_front" style="width: 33.3%">
+        <img class="jst_image" src="linus2_3_1_s.png" style="top: 0%; left:0%; width:100%">
+        <div class="jst_bubble_box" style="top: 82.2%; height: 17%">
+          <div class="jst_text_box">반응은 좋았고 사람들은 미닉스. 대신 리눅스를 사용하기 시작했다.</div>
+        </div>
+	    </div>
+      <!-- second frame -->
+      <div class="jst_frame" style="width: 33.3%">
+        <img class="jst_image" src="linus2_3_2_s.png" style="top: 25%; left:0%;">
+        <div class="jst_bubble_box" style="height: 16%">
+          <div class="jst_text_box">유닉스 모임에서 리눅스를 서로 복사하는 일은 흔한 일이 되었다.</div>
+        </div>
+      </div>
+      <div class="jst_frame" style="width: 33.3%">
+       <img class="jst_image" src="linus2_3_3_s.png" style="top: 0%; left:0%;">
+       <div class="jst_bubble_box" style="height: 16%">
+          <div class="jst_text_box">하지만, 일부 사람들은 돈을 받고 리눅스를 복사해주기도 했다.</div>
+        </div>
+        <div class="jst_right_anchor_bubble" id="id_bubble_3_3" style="top:72%; left:40%; width: 220px">
+          <canvas class="jst_canvas_bubble"></canvas>
+          <div class="jst_text">리눅스를 돈주고 팔다니.. 저작권 위반이야.</div>
+        </div>
+      </div>
+ 	  </div>
+    <div class="jst_note"></div>
+  </div>
+  <script type="text/javascript" src="../jstoons/jstoons.js"></script>
+</body>
+</html>
