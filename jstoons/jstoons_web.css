@@ -17,12 +17,12 @@ body {
 }
 
 .jst_row {
-  margin-bottom: 20px;
+  margin-bottom: 120px;
 }
 .jst_frame {
 
   margin: auto;
-  border: 1px solid gray;
+  border: 0px solid gray;
   position: relative;
 }
 
@@ -32,7 +32,8 @@ body {
 }
 
 .jst_note {
-  margin: auto;
+  margin-left: auto;
+  margin-top: 20px;
   margin-bottom: 10px;
   font-size: 13px;
   font-family: 'Nanum Gothic', sans-serif;
